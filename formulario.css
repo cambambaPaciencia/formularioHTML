@@ -1,3 +1,4 @@
+/*General Reset*/
 *{
     margin: 0;
     padding: 0;
@@ -5,3 +6,104 @@
     font-family: 'Open Sans','Segoe UI', sans-serif;
 }
 
+:root{
+    --firstColor: #380061;
+    --secondColor:#59429d;
+}
+
+body{
+    background-color: #f0f8ff;
+    color: var(--secondColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form{
+    margin: 1rem auto;
+    
+}
+
+fieldset{
+    border: none;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    margin: 0 auto;
+    width: 100%;
+}
+
+input,select{
+    padding: 8px;
+}
+
+input:focus, select:focus, textarea:focus{
+    background-color: #e0e0f8;
+    outline: none;
+}
+
+/*Title*/
+.title{
+    margin: 1rem 0;
+    text-align: center;
+    color: var(--firstColor);
+}
+
+.formItem{
+    margin-bottom: 1.2rem;
+}
+
+.formItem label{
+    margin-bottom: .3rem;
+    display:block;
+}
+
+.formGroup {
+    display: flex;
+    gap: 1rem;
+}
+
+.formItem input[type="text"], .formItem input[type="email"], select, textarea, button.btn{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.checkItens{
+    margin-bottom: 1.2rem;
+}
+
+.checkItens label:nth-child(1){
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.checkItens label{
+    display: inline-block;
+}
+.checkItens input{
+    display: inline-block;
+}
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    background-color: var(--firstColor);
+    font-size: 1rem;
+    color: #fff;
+    padding: .8rem 1.5rem;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #59429d;
+}
+
+/*components*/
+.bold{
+    font-weight: bold;
+}
