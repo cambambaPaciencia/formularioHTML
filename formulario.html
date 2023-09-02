@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário HTML e CSS</title>
+</head>
+<body>
+    
+    <hgroup class="title">
+        <h1>Cadastro de DEVS</h1>
+        <p>Preencha o formulário</p>
+    </hgroup>
+
+    <form>
+
+        <fieldset>
+            <div class="formItem">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="formItem">
+                <label for="sobrenome">Sobreome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div class="formItem">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="formItem">
+            <label for="">Tipo de programador?</label>
+            <label for="">
+                <input type="radio" name="devweb" value="frontend" checked>Front-End
+            </label>
+            <label for="">
+                <input type="radio" name="devweb" value="backend">Back-End
+            </label>
+            <label for="">
+                <input type="radio" name="devweb" value="fullstack">Full Stack  
+            </label>
+        </div>
+
+        <div class="formItem">
+            <label for="nivel">Nível</label>
+            <select name="nivel" id="nivel">
+                <option selected disabled value="">selecione seu nível</option>
+                <option value="junior">Junior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Senior</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <div class="formItem">
+                <label for="techs">Tecnologias</label>
+                <input type="checkbox" name="tech1" value="HTML">
+                <label for="tech1">HTML</label>
+                <input type="checkbox" name="tech2" value="CSS">
+                <label for="tech2">CSS</label>
+                <input type="checkbox" name="tech3" value="Javascript">
+                <label for="tech3">Javascript</label>
+                <input type="checkbox" name="tech4" value="PHP">
+                <label for="tech4">PHP</label>
+                <input type="checkbox" name="tech5" value="C#">
+                <label for="tech5">C#</label>
+                <input type="checkbox" name="tech6" value="Python">
+                <label for="tech6">Python</label>
+            </div>
+        </fieldset>
+
+        <div class="formItem">
+            <label for="">Conte um pouco da sua experiência</label>
+            <textarea name="exp" id="exp" rows="6" style="width: 26em;"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submeter</button>
+    </form>
+
+</body>
+</html>
